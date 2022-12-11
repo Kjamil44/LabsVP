@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WP lab - Students in Course</title>
+
+</head>
+<body>
+<header>
+  <h1>Students in Course </h1>
+</header>
+<section>
+  <tr th:each="student: ${studentsInCourse}">
+    <td th:text="${student.name}"></td>
+    <td th:text="${student.surname}"></td>
+    <td th:text="(${student.username})"></td>
+  </tr>
+  <a href="/listCourses">Back</a>
+</section>
+
+</body>
+</html>
